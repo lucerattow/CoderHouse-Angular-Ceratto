@@ -1,0 +1,29 @@
+.container {
+    max-width: 1200px;
+    margin: auto;
+
+    .main-grid-layout {
+        grid-column: 2 / 3;
+
+        display: grid;
+        height: 100%;
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 50px 1000px;
+    }
+
+    .navbar {
+        grid-column: 1 / 4;
+        grid-row: 1;
+    }
+
+    .toolbar {
+        grid-column: 1 / 2;
+        grid-row-start: 2;
+    }
+
+    .students {
+        grid-column: 2 / 4;
+        grid-row-start: 2;
+    }
+}
