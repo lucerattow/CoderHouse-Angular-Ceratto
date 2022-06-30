@@ -4,4 +4,15 @@
 
     width: 100%;
     height: 100%;
+
+    ul {
+        padding: 10px;
+
+        .aprobado {
+            color: rgb(40, 250, 40);
+        }
+        .desaprobado {
+            color: rgb(250, 40, 40);
+        }
+    }
 }

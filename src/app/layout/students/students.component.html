@@ -1,3 +1,8 @@
 <div class="students-container">
     <p>Componente Students</p>
+    <ul>
+        <li [ngClass]="Alumno.Aprobado ? 'aprobado' : 'desaprobado'" *ngFor="let Alumno of Alumnos">
+            Alumno: {{Alumno.Nombre}} {{Alumno.Apellido}}, fecha de nacimiento: {{ Alumno.Nacimiento | date:"dd/MM/yyyy"}}
+        </li>
+    </ul>
 </div>
