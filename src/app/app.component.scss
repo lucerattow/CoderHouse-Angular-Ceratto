@@ -1,29 +1,23 @@
-.container {
-    max-width: 1200px;
-    margin: auto;
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 400px 400px;
+}
 
-    .main-grid-layout {
-        grid-column: 2 / 3;
-
-        display: grid;
-        height: 100%;
-
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: 50px 1000px;
-    }
-
-    .navbar {
+main {
+    background: rgb(40, 40, 40);
+    app-toolbar {
         grid-column: 1 / 4;
-        grid-row: 1;
+        grid-row: 1 / 3;
     }
 
-    .toolbar {
-        grid-column: 1 / 2;
-        grid-row-start: 2;
+    app-students {
+        grid-column: 4 / 13;
+        grid-row: 2 / 3;
     }
 
-    .students {
-        grid-column: 2 / 4;
-        grid-row-start: 2;
+    app-new-student {
+        grid-column: 4 / 13;
+        grid-row: 1 / 2;
     }
 }
